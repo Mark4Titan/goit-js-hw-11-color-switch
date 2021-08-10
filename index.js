@@ -36,8 +36,13 @@ function sayColor() {
 
 
 butStart.addEventListener('click', () => {
-    tog(0); 
-    timerId = setInterval(sayColor, 1000);
+    tog(0);
+    sayColor()
+    timerId = setInterval(sayColor, 2000)
+    
+    
+        
+        
 });
 
 butStop.addEventListener('click', () => {
